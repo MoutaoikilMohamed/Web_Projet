@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une Annonce</title>
+</head>
+<body>
+    <h1>Ajouter une Annonce</h1>
+
+    <form action="AjouterAnnonce.php" method="POST">
+        <label for="detail">Détails</label>
+        <textarea id="detail" name="detail" required></textarea><br>
+
+        <label for="categorie">Catégorie</label>
+        <input type="text" id="categorie" name="categorie" required><br>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Vider">
+    </form>
+</body>
+</html>

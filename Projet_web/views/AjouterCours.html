@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Cours</title>
+</head>
+<body>
+    <h1>Ajouter un Cours</h1>
+
+    <form action="AjouterCours.php" method="POST" enctype="multipart/form-data">
+        <label for="titre">Titre</label>
+        <input type="text" id="titre" name="titre" required><br>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" required></textarea><br>
+
+        <label for="syllabus">Syllabus</label>
+        <textarea id="syllabus" name="syllabus" required></textarea><br>
+
+        <label for="fichier_pdf">Fichier PDF</label>
+        <input type="file" id="fichier_pdf" name="fichier_pdf" accept="application/pdf" required><br><br>
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Vider">
+    </form>
+</body>
+</html>
